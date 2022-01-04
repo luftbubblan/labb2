@@ -59,17 +59,15 @@ console.log("Ready to begin.");
 function sumRangeNumbers(lowest, highest) {
     let sum = 0;
     for(; lowest <= highest; lowest++) {
-        // console.log("sum: " + sum);
-        // console.log("lowest: " + lowest);
         sum += lowest;
     }
     return sum;
 }
 
- 
 
 
-ANSWER = sumRangeNumbers(22, 91);;
+
+ANSWER = sumRangeNumbers(22, 91);
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.1", ANSWER, false);
@@ -132,10 +130,8 @@ dbwebb.assert("1.2", ANSWER, false);
 
 function printRange(rangeStart, rangeStop) {
     let rangeString = "";
-    for(; rangeStart <= rangeStop ; rangeStart++) {
-        // console.log("Start: " + rangeStart);
+    for(; rangeStart < rangeStop ; rangeStart++) {
         rangeString += rangeStart + ",";
-        // console.log("String: " + rangeString);
     }
     return rangeString = rangeString.substring(0, rangeString.length - 1);
 }
@@ -162,9 +158,7 @@ dbwebb.assert("1.3", ANSWER, false);
 function printRangeReversed(rangeStart, rangeStop) {
     let rangeString = "";
     for(; rangeStart >= rangeStop ; rangeStart--) {
-        // console.log("Start: " + rangeStart);
         rangeString += rangeStart + ",";
-        // console.log("String: " + rangeString);
     }
     return rangeString = rangeString.substring(0, rangeString.length - 1);
 }
