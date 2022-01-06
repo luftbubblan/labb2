@@ -192,7 +192,7 @@ dbwebb.assert("1.4", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
-function printAnyRange(rangeStart, rangeStop) {
+ function printAnyRange(rangeStart, rangeStop) {
     let result = "";
     if(rangeStart < rangeStop) {
         result = printRange(rangeStart, rangeStop);
