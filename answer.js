@@ -155,6 +155,7 @@ dbwebb.assert("1.3", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+
 function printRangeReversed(rangeStart, rangeStop) {
     let rangeString = "";
     for(; rangeStart >= rangeStop ; rangeStart--) {
@@ -200,11 +201,6 @@ function printAnyRange(rangeStart, rangeStop) {
         result = printRangeReversed(rangeStart, rangeStop);
     }
     return result;
-}
-
-
-
-
 
 ANSWER = printAnyRange(25, 46);
 
