@@ -128,10 +128,12 @@ dbwebb.assert("1.2", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
-function printRange(rangeStart, rangeStop) {
+ function printRange(rangeStart, rangeStop) {
     let rangeString = "";
-    for(; rangeStart < rangeStop ; rangeStart++) {
+    for(; rangeStart <= rangeStop ; rangeStart++) {
+        // console.log("Start: " + rangeStart);
         rangeString += rangeStart + ",";
+        // console.log("String: " + rangeString);
     }
     return rangeString = rangeString.substring(0, rangeString.length - 1);
 }
