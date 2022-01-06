@@ -201,6 +201,7 @@ function printAnyRange(rangeStart, rangeStop) {
         result = printRangeReversed(rangeStart, rangeStop);
     }
     return result;
+}
 
 ANSWER = printAnyRange(25, 46);
 
